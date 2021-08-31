@@ -1,0 +1,30 @@
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="space-between start" class="mb-3">
+    <span class="mr-3 title">Количество километров</span>
+    <input
+      #kilometers
+      nbInput
+      type="number"
+      placeholder="Начните ввод"
+    >
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between start" class="mb-3">
+    <span class="mr-3 title">Возраст</span>
+    <input
+      #age
+      nbInput
+      type="number"
+      placeholder="Начните ввод"
+    >
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between start" class="mb-4">
+    <span class="mr-3 title">Вес багажа</span>
+    <input
+      #weight
+      nbInput
+      type="number"
+      placeholder="Начните ввод"
+    >
+  </div>
+  <button fxLayout="column" fxLayoutAlign="center center" nbButton class="button" status="info" (click)="sendData()">Рассчитать</button>
+</div>

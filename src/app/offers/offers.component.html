@@ -1,0 +1,23 @@
+<nb-card style="width: 50vw!important; height: 70vh!important;">
+  <nb-card-header>
+    <div>
+      <h3>Предложения: </h3>
+    </div>
+  </nb-card-header>
+  <nb-card-body>
+    <div>
+      <h3 style="width: 100%; background-color: rgba(0, 0, 0, .1);">Аэрофлот</h3>
+      <div *ngFor="let item of aeroflot">
+        <span class="name">{{item.name}}: </span>
+        <span class="cost">{{item.cost | price}} руб.</span>
+      </div>
+      <h3 *ngIf="aeroflot.length === 0">Предложений нет</h3>
+    </div>
+    <h3 style="width: 100%; background-color: rgba(0, 0, 0, .1);">РЖД</h3>
+    <div *ngFor="let item of rr">
+      <span class="name">{{item.name}}: </span>
+      <span class="cost">{{item.cost | price}} руб.</span>
+    </div>
+    <h3 *ngIf="rr.length === 0">Предложений нет</h3>
+  </nb-card-body>
+</nb-card>

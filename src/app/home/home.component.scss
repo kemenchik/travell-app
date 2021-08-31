@@ -1,0 +1,26 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input {
+  max-width: none!important;
+  width: 70%;
+  font-size: 2rem;
+  &::placeholder {
+    font-size: 1.25rem!important;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.button {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+}
